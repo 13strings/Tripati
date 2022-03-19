@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Tripati Research UI</title>
+
+    <style>
+    .button {
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #a9a9a9;
+    }
+
+    .button1:hover {
+      background-color: #a9a9a9;
+      color: white;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    h2{text-align: right; font-size: 10px;color: black;}
+    </style>
+  </head>
+  <body>
+    <center>
+    <h1>Tripati Research Lab Robot</h1>
+    Button for releasing Niscin bottles:<br><br><br>
+    <button class="button button1">Bottles</button><br><br><br>
+
+    Here is current depth:<br><br>
+        <table class ="center">
+          <tr>
+            <td>January</td>
+          </tr>
+        </table><br>
+    Here is measurements from sensors:<br><br>
+    <table style="width:400px", class = "center">
+      <tr>
+        <th>Salinity</th>
+        <th>Oxygen</th>
+        <th>pH</th>
+      </tr>
+      <tr>
+        <td>uh</td>
+        <td>uh</td>
+        <td>uh</td>
+      </tr>
+
+    </table>
+
+    </center>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2> developed by Katie Kubiatko, Bruin Underwater Robotics at UCLA </h2>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
