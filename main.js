@@ -41,3 +41,11 @@ app.on('window-all-closed', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+var addButton = document.getElementById("bottles");
+addButton.addEventListener("click", runScript);
+
+function runScript(){
+  
+  // CODE HERE FOR RUNNING THE SCRIP THRU RASPBERRY PI
+}
